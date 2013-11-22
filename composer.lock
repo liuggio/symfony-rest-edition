@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "3f4072ff9f8e1a3e6395dc7a7084d4c6",
+    "hash": "fc537871e730ebcf7c4261c03e8070c7",
     "packages": [
         {
             "name": "adrienbrault/form-serializer",
@@ -1204,6 +1204,65 @@
             "time": "2013-07-19 00:03:27"
         },
         {
+            "name": "liip/cache-control-bundle",
+            "version": "dev-support_method_ips_attributes",
+            "target-dir": "Liip/CacheControlBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liip/LiipCacheControlBundle.git",
+                "reference": "662d8f4ae67eb13dad95f5cedb5542b93f2dddba"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/liip/LiipCacheControlBundle/zipball/662d8f4ae67eb13dad95f5cedb5542b93f2dddba",
+                "reference": "662d8f4ae67eb13dad95f5cedb5542b93f2dddba",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "symfony/framework-bundle": "~2.1"
+            },
+            "require-dev": {
+                "ext-curl": "*"
+            },
+            "suggest": {
+                "ext-curl": "Used by Varnish Helper to construct requests."
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Liip\\CacheControlBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Community contributions",
+                    "homepage": "https://github.com/liip/LiipThemeBundle/contributors"
+                },
+                {
+                    "name": "Liip AG",
+                    "homepage": "http://www.liip.ch/"
+                }
+            ],
+            "description": "This Bundle provides a way to set path based cache expiration headers via the app configuration and provides a helper to control the reverse proxy varnish.",
+            "keywords": [
+                "caching",
+                "esi",
+                "http",
+                "varnish"
+            ],
+            "time": "2013-11-22 10:24:07"
+        },
+        {
             "name": "monolog/monolog",
             "version": "1.7.0",
             "source": {
@@ -2161,7 +2220,8 @@
     "stability-flags": {
         "jms/serializer-bundle": 20,
         "nelmio/api-doc-bundle": 20,
-        "fsc/hateoas-bundle": 20
+        "fsc/hateoas-bundle": 20,
+        "liip/cache-control-bundle": 20
     },
     "platform": {
         "php": ">=5.3.3"
